@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Hello World # workflow name
+on: [push] # event
+jobs: # it can contain multiple jobs
+  hello: # job name
+    runs-on: ubuntu-latest # where to run
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, world!"
