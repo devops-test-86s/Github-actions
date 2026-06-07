@@ -42,5 +42,6 @@ jobs:
       - name: Print Inputs
         run: |
           echo "Name: ${{ github.event.inputs.name }}"
+          exit 0
           echo "Environment: ${{ github.event.inputs.env }}"
           echo "Retry Count: ${{ github.event.inputs.retry_count }}"
